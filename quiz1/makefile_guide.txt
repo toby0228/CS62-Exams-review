@@ -1,0 +1,59 @@
+*Makefile* Linux command for this file: make
+
+for the make file folder all the code follows a pattern
+
+target: dependices
+    action
+
+for example:
+
+output: main.cpp class1.cpp class2.cpp  (target:output  dependices are 3 cpp files)
+    g++ main.cpp class.cpp class2.cpp (action is to compile(g++))
+
+**Partical compile** (avoid linking files, save times)
+
+output: main.o class1.o
+    g++ main.o class1.o -o output
+
+main.o: main.cpp
+    g++ -c main.cpp -o main.o (-c means compile only(without this c++ will also do linking), -o names the output)
+
+class1.o: class1.cpp
+    g++ -c class1.cpp -o class1.o
+
+clean
+    rm *.o ouput ("restart your computer for compile"; Linux command: make clean)
+
+
+**Short cuts or special character**
+
+output: main.o class1.o class2.o
+    g++ $^ -o $@  
+< refers to left most dependency(memorize by pointing left), ^ refers to all dependency(memorize by pointing up), @refers to target
+
+class1.o: class1.cpp
+    g++ $^ -o $@
+
+
+**Wild cards**
+output: main.o class1.o class2.o
+    g++ $^ -o $@  
+
+%.o: %.cpp
+    g++ $< -o $@  
+
+% matches any strings in Makefiles
+
+
+**Variables
+
+COMP=g++
+FLAGS=-Wall -std=c++11
+output: main.o class1.o class2.o
+	$(COMP) $(FLAGS) $^ -o $@
+%.o: %.cpp
+	$(COMP) $(FLAGS) -c $< -o $@
+clean:
+	rm *.o output
+
+comp means compile, wall is a thing that can control compilation
