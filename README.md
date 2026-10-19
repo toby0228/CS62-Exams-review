@@ -22,3 +22,7 @@ See the C++ implementation: [makefile_guide.txt](./quiz1/makefile_guide.txt)
 - **Linux Command**
 
 See the Command in Linux: [linux_command.txt](./quiz1/linux_command.txt)
+
+- **Topo sort: DFS**
+
+See the C++ implementation: [quiz1_toposort.cpp](./quiz1/quiz1_toposort.cpp)
