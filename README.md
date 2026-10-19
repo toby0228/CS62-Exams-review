@@ -4,7 +4,7 @@ This repository contains materials for reviewing exams in **CSCI 62**.
 
 ## Topics
 
-### Quiz 1: Graph Traversal
+### Quiz 1: Graph Traversal, Linux command, Makefile
 
 - **Breadth-First Search (BFS)**
 - **Depth-First Search (DFS)**
