@@ -1,0 +1,5 @@
+{
+  "[cpp]": {
+    "editor.inlineSuggest.enabled": false
+  }
+}
