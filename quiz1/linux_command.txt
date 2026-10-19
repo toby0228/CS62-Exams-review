@@ -1,0 +1,17 @@
+ls: list files in directory
+
+cat: concatenate, type in few words and give you the most close result(filename)
+
+cp: copy files (cp file1.txt file2.txt)
+
+rm: remove file (rm file.txt)
+
+man: displays reference manuals, open user mannual (man ls--> show what ls do)
+
+pwd: print working directory
+
+cd: change dependency (cd desktop/cs62)
+
+mkdir: make directory, make a file (mdkir cs62)
+
+rmdir: remove directory, remove a file (rmkir cs62)
