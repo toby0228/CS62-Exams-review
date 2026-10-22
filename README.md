@@ -9,7 +9,7 @@ This repository contains materials for reviewing exams in **CSCI 62**.
 - **Breadth-First Search (BFS)**
 - **Depth-First Search (DFS)**
 
-See the C++ implementation: [quiz1_bfs_dfs.cpp](./quiz1_bfs_dfs.cpp)
+See the C++ implementation: [quiz1_bfs_dfs.cpp](./quiz1/quiz1_bfs_dfs.cpp)
 
 - **Eccentricity**: The maximum distance from v to another vertex, where “distance” refers to the distance along the shortest path.
   
