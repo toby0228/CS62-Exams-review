@@ -33,4 +33,5 @@ See the C++ implementation: [quiz1_toposort.cpp](./quiz1/quiz1_toposort.cpp)
 - **Inheritance and polymorphism**
 
 See the C++ implementation: [medicalprovider.cpp](./midterm1/medicalprovider.cpp)
+
 C++ header file implementation: [medicalprovider.h](./midterm1/medicalprovider.h)
