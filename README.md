@@ -26,3 +26,11 @@ See the Command in Linux: [linux_command.txt](./quiz1/linux_command.txt)
 - **Topo sort: DFS**
 
 See the C++ implementation: [quiz1_toposort.cpp](./quiz1/quiz1_toposort.cpp)
+
+
+### Midterm1
+
+- **Inheritance and polymorphism**
+
+See the C++ implementation: [medicalprovider.cpp](./midterm1/medicalprovider.cpp)
+C++ header file implementation: [medicalprovider.h](./midterm1/medicalprovider.h)
