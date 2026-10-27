@@ -6,25 +6,37 @@ Doctor::Doctor() {}
 
 Doctor::Doctor(std::string n, std::string s)
     : MedicalProvider("Doctor", n, (s == "General Practitioner") ? 100 : 150),specialty(s) {}
-
-bool Doctor::doSurgery() { return true; }
+    // call the parent constructor and initialize the specialty
+bool Doctor::doSurgery() { return true; } // all doctors can do surgery
 
 
 Nurse::Nurse() {}
 
 Nurse::Nurse(std::string n, std::string g)
-    : MedicalProvider("Nurse", n, 90), grade(g) {}
+    : MedicalProvider("Nurse", n, 90), grade(g) {}// call the parent constructor and initialize the grade
 
 std::string Nurse::getGrade() { return grade; }
 
 bool Nurse::doSurgery() {
-    return getGrade() == "Nurse Practitioner";
+    return getGrade() == "Nurse Practitioner"; // if it is a nurse practioner can do surgery
 }
 
 std::vector<MedicalProvider*> filterSurgery(std::vector<MedicalProvider*> list){
     std::vector<MedicalProvider*> out;
     for(auto i : list){
-        if(i->doSurgery()){out.push_back(i);}
+        if(i->doSurgery()){out.push_back(i);} // if can do surgery add to the vector
+    }
+    return out;
+}
+
+MedicalProvider* cheapestForProcedure(std::vector<MedicalProvider*> list, std::string p){
+    MedicalProvider* out=nullptr;
+    for(auto i:list){
+        if(i->doProcedure(p)){
+            if( out==nullptr || i->getFee()<out->getFee()){ // initialize out or if fee is smaller
+                out=i;
+            }
+        }
     }
     return out;
 }
@@ -52,6 +64,12 @@ int main() {
     }
     
     std::cout<< "\n";
+
+    d0->addProcedure("pro");
+    d2->addProcedure("pro");
+
+    MedicalProvider* m=cheapestForProcedure(l,"pro");
+    std::cout<< m->getname() << "\n";
 
     for(auto p:l){delete p;}
 
