@@ -35,3 +35,7 @@ See the C++ implementation: [quiz1_toposort.cpp](./quiz1/quiz1_toposort.cpp)
 See the C++ implementation: [medicalprovider.cpp](./midterm1/medicalprovider.cpp)
 
 C++ header file implementation: [medicalprovider.h](./midterm1/medicalprovider.h)
+
+- **Breadth-First Search (BFS) --> distance**
+
+See the C++ implementation: [midtermgraph.cpp](./midterm1/midtermgraph.cpp)
