@@ -38,4 +38,4 @@ C++ header file implementation: [medicalprovider.h](./midterm1/medicalprovider.h
 
 - **Breadth-First Search (BFS) --> distance**
 
-See the C++ implementation: [midtermgraph.cpp](./midterm1/midtermgraph1.cpp)
+See the C++ implementation: [midtermgraph1.cpp](./midterm1/midtermgraph1.cpp)
