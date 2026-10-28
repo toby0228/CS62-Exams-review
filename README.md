@@ -28,7 +28,7 @@ See the Command in Linux: [linux_command.txt](./quiz1/linux_command.txt)
 See the C++ implementation: [quiz1_toposort.cpp](./quiz1/quiz1_toposort.cpp)
 
 
-### Midterm1
+### Midterm1: Topics in Quiz1 + Inheritance and Polymorphism
 
 - **Inheritance and polymorphism**
 
