@@ -28,6 +28,8 @@ public:
 
     bool is_biparite();
 
+    std::vector<std::vector<std::size_t>> graph biparite_group();
+
 private:
     std::vector<std::unordered_set<std::size_t>> data_;
 
@@ -62,4 +64,31 @@ bool graph::is_biparite(){
         }
     }
     return true; // true other wise
+}
+
+
+std::vector<std::vector<std::size_t>> graph::biparite_group(){
+    std::vector<std::vector<std::size_t>> out(2);
+    std::vector<int> visited(getsize(),0); 
+
+    for(std::size_t current=0;current<getsize();current++){ 
+        if(visited[current]==0){
+            visited[current]=1; 
+
+            if(!dfs_helper(current, visited)){
+                return {}; // return empty vector if it is not bipartite
+            }
+        }
+    } // until now it is like last step, check if it is a bipartite
+
+    for(std::size_t i=0;i<getsize();i++){
+        if(visited[i]==1){ // if visited is 1 means it is first group push to out[0]
+            out[0].push_back(i);
+        }
+        else if(visited[i]==2){ // push to out[1] if visited is 2
+            out[1].push_back(i);
+        }
+    }
+
+    return out;
 }
