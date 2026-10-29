@@ -19,7 +19,7 @@ public:
     //estimated value in thousands
     }
 
-    virtual bool operator<(const Dwelling& d2) const{ // pass in pointer, so it will work with child varibale (house)
+    bool operator<(const Dwelling& d2) const{ // pass in pointer, so it will work with child varibale (house)
         return (value()<d2.value()) ? true:false;
     }
 };
