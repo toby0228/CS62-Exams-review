@@ -31,7 +31,7 @@ private:
     
     void dfs_helper(std::size_t source, std::vector<std::size_t>& traversal, std::vector<bool>& visited) const{
         for(auto neighbor : data_[source]){
-            while(!visited[neighbor]){
+            if(!visited[neighbor]){
                 visited[neighbor]=true;
                 traversal.push_back(neighbor);
                 dfs_helper(neighbor, traversal, visited);

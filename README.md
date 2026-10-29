@@ -43,3 +43,9 @@ See the C++ implementation: [midtermgraph1.cpp](./midterm1/midtermgraph1.cpp)
 - **Depth-First Search (DFS) --> # of connected components**
 
 See the C++ implementation: [midtermgraph2.cpp](./midterm1/midtermgraph2.cpp)
+
+- **Bipartite graph -> dfs application**
+
+Bipartite graph is a graph that can be divide into group, and vertecies in each group aren't connect with each other. For instance I have group A,B in the graph. A1 is not connected with A2, but connected with B1; A2 is connected to B1 but not A1. It works the same way reversly.
+
+![Bipartite graph example](./midterm1/bipartitegraph.png)
