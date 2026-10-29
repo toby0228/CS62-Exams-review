@@ -51,3 +51,9 @@ Bipartite graph is a graph that can be divide into group, and vertecies in each 
 ![Bipartite graph example](./midterm1/bipartitegraph.png)
 
 See the C++ implementation: [bipartite_graph.cpp](./midterm1/bipartite_graph.cpp)
+
+- **Inheritance and polymorphism -> dewelling class**
+
+For functions in parent class, if the child have same function in their class, and want the function in child behave in their own way, we need to add a "virtual" infront of the function in parent; For the function Parent class that takes in the type of input that is "Parent", if we want this function also works for type child, make the input pointer. We can let parent pointer point to child class, this is how polymorphism works.
+
+See the C++ implementation: [dwelling.cpp](./midterm1/dwelling.cpp)
