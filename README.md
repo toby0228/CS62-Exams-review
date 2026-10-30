@@ -15,6 +15,8 @@ See the C++ implementation: [quiz1_bfs_dfs.cpp](./quiz1/quiz1_bfs_dfs.cpp)
 
 ![eccentricity](./quiz1/eccentricity.png)
   
+To calculate the distance, instead of having visited vector, we will implement a distance vector that is distance(size(),-1), where -1 represent non-visited. And inside the algorithm, we will make the distance on unvisited neighbor: distance[neighbor] = distance[current] + 1.
+
 See the C++ implementation: [quiz1_eccen.cpp](./quiz1/quiz1_eccen.cpp)
 
 - **Makfiles**
