@@ -62,7 +62,7 @@ private:
     std::vector<std::set<int>> adjlist;
     void dfs_recursive(int source, std::vector<bool>& visited, std::vector<int>& traversal){ // call by reference to make sure change the vale in vector
         for(auto neighbor : adjlist[source]){ // loop through neighbor of current
-            while(!visited[neighbor]){
+            if(!visited[neighbor]){
                 visited[neighbor]=true; // mark the unvisited neighbor visited
                 traversal.push_back(neighbor); // and push_back this neighbor into traversal
                 dfs_recursive(neighbor,visited,traversal); // and do the samething with the neighbor of the current
