@@ -51,8 +51,11 @@ int graph::num_of_components() const{
         if(!visited[current]){
             visited[current]=true;
             traversal.push_back(current);
-            dfs_helper(current, traversal, visited);
-            ++components;
+            dfs_helper(current, traversal, visited); // one dfs finished means one connnected componets
+            components++;
+            /* Ex: 1-2-3 4-5 6: this graph have 3 connected components
+            if we do dfs on 1, it will stop at 3, and components++; we do dfs on 4, it will stop 
+            at 5 component++, and 6 component++, and the componets at end is 3*/
         }
     }
 
