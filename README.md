@@ -29,6 +29,8 @@ See the Command in Linux: [linux_command.txt](./quiz1/linux_command.txt)
 
 - **Topo sort: DFS**
 
+![toposort](./quiz1/toposort.png)
+
 See the C++ implementation: [quiz1_toposort.cpp](./quiz1/quiz1_toposort.cpp)
 
 
