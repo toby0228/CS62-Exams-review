@@ -101,3 +101,48 @@ For example if I am designing a calculator that do adding, ___ + ____ = ____ (ad
 | Model | Stores numbers and perform adding operation |
 | View | Display input fields, button, result |
 | Controller | Respond to the adding button, and tell model to compute |
+
+**Design Patterns** -> A reusable solution to a common software design problem. It provides guidance on organizing code rather than a complete implementation. MCV is a kind of pattern.
+
+- **Data Science & Machine learning**
+
+| Term | Explanation |
+|---|---|
+| Artificial Intelligence | Technology that allows computers to perform tasks that normally requires human intelligence, and application of DS |
+| Data Science | Using data and algorithms to discover patterns and make conclusion |
+| Machine Learning | A Science of computer to realize a task without being explicitly programmed |
+| Supervised leanrning | Training a model using data with known correct answers (regression and classification) |
+| Unsupervised learning | Finding patterns or groups in data without know answer labels |
+| Classification | Prediciting Catagory, basically true or false, such as scam detector |
+| Regression | Predicting a numerical value, such as house price or temperature |
+
+**Data Science Pipeline** : Data collection(csv file, common saperate value) -> data process -> visualization -> analysis/ML(train model) -> insight(improve/apply)
+
+While training model, people usually split data into training data and testing data, to evaluate how model preform with unsean data
+
+**Confusion Matrix** : True Positive, False negative, False positive, True negitive
+
+![confus](./quiz2/confusion.png)
+
+| Term | Explanation | Formula (Don't need to memorize) |
+|---|---|---|
+| Accuracy | How many prediction are correct overall | (TP+TN) / (TP+TN+FP+FN) |
+| Precision | How reliable are positive prediction | TP/(TP+FP) |
+| Recall | How many actual positives were detected | TP/(TP/FN) |
+| F1 score | Balance between precsion and recall | 2PR/(P+R) -> P R is precision and recall |
+
+**Precison is important** when false posotive is costly
+
+**Recall is important** when false negative is costly
+
+F1 score is useful when you want to balance between precision and recall
+
+**Algorithm : Linear Seperator** : Seperate classes using a line in 2D, works well with linearly separable data
+
+**Algoritm : Desion Tree** : Seperate classes using repeated if/else condition, can learn nonlinear boundaries
+
+**Ways to handle missing values** :
+
+Remove missing data: Delete rows or column containing missing data, for example dataframe.dropna()
+
+Fill missing data: replace missing data with previous value, mean, median
