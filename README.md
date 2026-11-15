@@ -87,3 +87,17 @@ For example a person can own many dogs -> person 1 --- 0..* dogs -> this means o
 | 0..* or * | Zero or many |
 | 1..* | 1 or many |
 | 2..5 | Between 2 and 5 |
+
+**Minimum Viabale Product (MVP)** -> The simplest version of product that includes enough feature to solve main problem, and able to do future implementation and get feedback.
+
+For example, if I am building a cooking app, my mvp is the app that can search up recipe and have step by step guidance. Once I am satisfy with it can include new features like AI assistance.
+
+**Model View Controller (MVC)** -> a software architectural patter that devide a software into model, view and controller. While controller handles inputs, model handles Date and Logic, view handles user interface.
+
+For example if I am designing a calculator that do adding, ___ + ____ = ____ (add), here is how my MVC works:
+
+| Component | Respinsibility |
+|---|---|
+| Model | Stores numbers and perform adding operation |
+| View | Display input fields, button, result |
+| Controller | Respond to the adding button, and tell model to compute |
