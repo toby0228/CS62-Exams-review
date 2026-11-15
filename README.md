@@ -72,11 +72,11 @@ See the explanation & examples: [qt.md](./quiz2/qt.md)
 
 - **Software Development Lifecycle**
 
-*Inheritance* -> "is a" relationship, it means a child class inherits properties and methods from a parent class. 
+**Inheritance** -> "is a" relationship, it means a child class inherits properties and methods from a parent class. 
 
 For example dog *is a* animal -> class dog : public animal {} -> this means dog inheritance from animal class
 
-*Multiplicity* -> "how many" relationship
+***Multiplicity** -> "how many" relationship
 
 For example a person can own many dogs -> person 1 --- 0..* dogs -> this means one person may own 0 or more dogs
 
