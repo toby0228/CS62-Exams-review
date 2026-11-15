@@ -69,3 +69,21 @@ See the C++ implementation: [dwelling.cpp](./midterm1/dwelling.cpp)
 - **Qt - QMainWindow (class), QWidget (class), ui (the field), connect (method), slots, signals**
 
 See the explanation & examples: [qt.md](./quiz2/qt.md)
+
+- **Software Development Lifecycle**
+
+*Inheritance* -> "is a" relationship, it means a child class inherits properties and methods from a parent class. 
+
+For example dog *is a* animal -> class dog : public animal {} -> this means dog inheritance from animal class
+
+*Multiplicity* -> "how many" relationship
+
+For example a person can own many dogs -> person 1 --- 0..* dogs -> this means one person may own 0 or more dogs
+
+| Symbol | Meaning |
+|---|---|
+| 1 | Exact 1 |
+| 0..1 | Zero or 1 |
+| 0..* or * | Zero or many |
+| 1..* | 1 or many |
+| 2..5 | Between 2 and 5 |
