@@ -64,7 +64,7 @@ For functions in parent class, if the child have same function in their class, a
 
 See the C++ implementation: [dwelling.cpp](./midterm1/dwelling.cpp)
 
-### Quiz 2: Qt, Software Develpoment life cycle
+### Quiz 2: Qt, Software Develpoment life cycle, Data Science & Machine Learning
 
 - **Qt - QMainWindow (class), QWidget (class), ui (the field), connect (method), slots, signals**
 
